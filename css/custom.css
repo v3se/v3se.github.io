@@ -1,0 +1,95 @@
+a {
+  color: inherit;
+}
+
+.container-fluid {
+  overflow: hidden;
+}
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes transitionInNavbar {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.col-md-6 {
+  animation: transitionIn 2s;
+}
+
+.nav-link,
+.btn {
+  animation: transitionInNavbar 1s;
+}
+
+.intro-left {
+  background: url(https://images.unsplash.com/photo-1512205908084-f43bea685ff1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80);
+  background-size: 100% 100%;
+  position: fixed;
+  left: 0;
+  width: 33.3333%;
+  height: 100%;
+  color: white;
+}
+
+ion-icon {
+  font-size: 64px;
+}
+
+.main-img {
+  height: 25vh;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .intro-left {
+    height: 40vh;
+    margin-bottom: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.avatar {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: 1rem;
+  animation: transitionIn 1s;
+}
+
+.full-height {
+  height: 100%;
+  animation: transitionIn 1s;
+}
+
+.background {
+  background-color: rgb(245, 245, 245);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  position: fixed;
+  clip-path: polygon(0 0, 100% 0, 31% 100%, 0 100%);
+  animation: transitionIn 3s;
+}
+
+@media (max-width: 768px) {
+  .background {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: fixed;
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  }
+}
