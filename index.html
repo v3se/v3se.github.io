@@ -20,9 +20,9 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class="d-flex flex-column min-vh-100">
     <nav class="navbar navbar-expand-md navbar navbar-dark bg-dark sticky-top"">
-      <div class="container-fluid">
+      <div class="container-fluid fade-in">
         <a class="navbar-brand" href="#">Robert Vesterinen</a>
         <button
           class="navbar-toggler"
@@ -54,6 +54,17 @@
              </form>
             </li>
           </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                FI
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item" href="#">EN</a></li>
+                <li><a class="dropdown-item" href="#">FI</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -64,12 +75,12 @@
           <div class="col">
             <img src="img/avatar.jpg" class="avatar" alt="avatar">
             <p class="display-6">Robert Vesterinen</p>
-            <p class="display-7">Something something...</p>
+            <p class="display-7">Oispa kaljaa</p>
           </div>
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid fade-in no-overflow">
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-6">
@@ -77,30 +88,66 @@
             <h1 class="display-1">
               About me
             </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam asperiores consequatur ab similique quidem. Nostrum sequi eius tenetur obcaecati perspiciatis, blanditiis amet asperiores facere repellat eligendi. A, necessitatibus distinctio? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci nulla repudiandae alias, dolorum possimus laudantium ullam nobis dicta explicabo tenetur officia ab? Debitis voluptas minima fugit. Qui est eos dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus dicta, ratione dolore blanditiis, ad deleniti ipsa animi quaerat distinctio corrupti molestias quis ullam aliquam quia est voluptates reprehenderit cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident vel architecto cupiditate aspernatur quidem accusamus eaque reiciendis laudantium ipsam saepe fugiat, temporibus nemo?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam asperiores consequatur ab similique quidem. 
+              Nostrum sequi eius tenetur obcaecati perspiciatis, blanditiis amet asperiores facere repellat eligendi. 
+              A, necessitatibus distinctio? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci nulla repudiandae alias, 
+              dolorum possimus laudantium ullam nobis dicta explicabo tenetur officia ab? Debitis voluptas minima fugit. 
+              Qui est eos dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus dicta, ratione dolore blanditiis, 
+              ad deleniti ipsa animi quaerat distinctio corrupti molestias quis ullam aliquam quia est voluptates reprehenderit cumque! 
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio provident vel architecto cupiditate aspernatur quidem accusamus eaque reiciendis 
+              laudantium ipsam saepe fugiat, temporibus nemo?</p>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4"></div>
-        <div class="col-md-3 mt-3">
+        <div class="col-md-3 mt-4">
           <div>
             <img class="rounded img-fluid main-img" src="https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" alt="Code">
-            <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/242111308&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/worsethanbullets" title="Worse Than Bullets" target="_blank" style="color: #cccccc; text-decoration: none;">Worse Than Bullets</a> · <a href="https://soundcloud.com/worsethanbullets/cold-feet-1" title="Cold Feet" target="_blank" style="color: #cccccc; text-decoration: none;">Cold Feet</a></div>
           </div>
         </div>
-        <div class="col-md-4 mt-3">
+        <div class="col-md-4">
           <div>
-            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p> <p>Sed quis nam eius rem voluptatum, ab quasi, alias cupiditate sunt accusantium assumenda necessitatibus porro, animi nulla hic dolorum asperiores cumque numquam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, accusantium? Animi, doloribus obcaecati fuga ipsam asperiores placeat eius porro ab laudantium veritatis, voluptatem, cum et iste officiis repellat quam magnam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum unde aliquam quisquam? Dolores harum, non corporis sed et sit corrupti assumenda nisi tempora labore impedit ipsum qui blanditiis. Id, sapiente.</p>
-            <a href="https://www.linkedin.com/in/robert-vesterinen-8205bab5" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
-            <a href="https://github.com/v3se" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
-            <a href="https://soundcloud.com/worsethanbullets" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
+            <p class="lead">
+              This is a lead paragraph. It stands out from regular paragraphs.
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam asperiores consequatur ab similique quidem. 
+              Nostrum sequi eius tenetur obcaecati perspiciatis, blanditiis amet asperiores facere repellat eligendi. A, necessitatibus distinctio? Lorem ipsum dolor sit, 
+              amet consectetur adipisicing elit. Adipisci nulla repudiandae alias, dolorum possimus laudantium ullam nobis dicta explicabo tenetur officia ab? Debitis voluptas 
+              minima fugit. Qui est eos dolorum? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid accusamus dicta, ratione dolore blanditiis, ad deleniti ipsa animi 
+              quaerat distinctio corrupti molestias quis ullam aliquam quia est voluptates reprehenderit cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+              Distinctio provident vel architecto cupiditate aspernatur quidem accusamus eaque reiciendis laudantium ipsam saepe fugiat, temporibus nemo?</p>
           </div>
         </div>
-
-          
-        
+      </div>
+      <div class="container p-5 mt-5">
+      <div class="row">
+          <div class="col-md-6"></div>
+          <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn btn-outline-success">Contact me</button>
+            </div>
+            <div class="d-flex justify-content-center mt-2">
+              <button type="submit" class="btn btn btn-success">Download resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+          <footer class="footer mt-auto bg-light">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                  <div class="d-flex justify-content-center">
+                    <a href="https://www.linkedin.com/in/robert-vesterinen-8205bab5" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="https://github.com/v3se" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://soundcloud.com/worsethanbullets" target="_blank"><ion-icon name="logo-soundcloud"></ion-icon></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"

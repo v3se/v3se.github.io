@@ -2,7 +2,7 @@ a {
   color: inherit;
 }
 
-.container-fluid {
+.no-overflow {
   overflow: hidden;
 }
 
@@ -15,6 +15,16 @@ a {
   }
 }
 
+.dropdown-menu {
+  min-width: 3.5rem;
+  right: 0;
+  left: auto;
+}
+
+#footer {
+  position: fixed;
+}
+
 @keyframes transitionInNavbar {
   0% {
     opacity: 0;
@@ -24,13 +34,14 @@ a {
   }
 }
 
-.col-md-6 {
-  animation: transitionIn 2s;
+.col-md-6,
+.fade-in {
+  animation: transitionIn 1s;
 }
 
 .nav-link,
 .btn {
-  animation: transitionInNavbar 1s;
+  animation: transitionInNavbar 0.75s;
 }
 
 .intro-left {
@@ -54,7 +65,7 @@ ion-icon {
 
 @media (max-width: 768px) {
   .intro-left {
-    height: 40vh;
+    height: 43vh;
     margin-bottom: 0;
     position: relative;
     width: 100%;
