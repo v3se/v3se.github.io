@@ -1,7 +1,10 @@
-a {
+/* a {
   color: inherit;
-}
+} */
 
+body {
+  position: relative;
+}
 .no-overflow {
   overflow: hidden;
 }
