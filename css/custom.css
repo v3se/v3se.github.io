@@ -1,6 +1,10 @@
-/* a {
+.footer-logo {
   color: inherit;
-} */
+}
+
+ion-icon {
+  pointer-events: none;
+}
 
 body {
   position: relative;
