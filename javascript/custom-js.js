@@ -1,18 +1,25 @@
 let offset = $('#head-nav').height();
 
-
 $('.navbar li a').click(function(event) {
     event.preventDefault();
     window.location.hash = $(this).attr('href')
     const y = $($(this).attr('href'))[0].getBoundingClientRect().top + window.pageYOffset - offset;
     window.scrollTo({top: y, behavior: 'smooth'});
-})
+});
 
-$(".dropdown-lang li a").click(function(){
-    console.log("asdlkfjaslkdf")
-    $(".btn:first-child").html($(this).text()+' <span class="caret"></span>');
+$(".dropdown").on("click", "li", function(event){
+    var x = $(event); // Get the text of the element
+    document.getElementById("navbarDarkDropdownMenuLink").innerHTML = `${event.target.innerText}`;
+    // alert(`Clicked ${event.target.innerText}!`);
+    if (`${event.target.innerText}` === 'FI') {
+
+        document.getElementById("aboutme1").innerHTML = fi_aboutme1;
+      } else {
+        document.getElementById("aboutme1").innerHTML = en_aboutme1;
+      }
   });
 
+  
 let en_aboutme1 = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quisquam asperiores consequatur ab similique quidem. 
 Nostrum sequi eius tenetur obcaecati perspiciatis, blanditiis amet asperiores facere repellat eligendi. 
 A, necessitatibus distinctio? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci nulla repudiandae alias, 
